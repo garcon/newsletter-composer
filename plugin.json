@@ -1,0 +1,15 @@
+{
+  "name": "newsletter/composer",
+  "description": "Composer plugin for creating and managing newsletters.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Martin Kopta",
+    "email": "martin.kopta@garcon.cz"
+  },
+  "license": "public domain",
+  "keywords": ["newsletter", "curation", "email", "writing"],
+  "agents": "agents/",
+  "skills": "skills/",
+  "hooks": "hooks.json",
+  "mcpServers": ".mcp.json"
+}
