@@ -19,7 +19,7 @@ append: {{Email footer}}}
 
 > {{standfirst}}
 
-{{Telegraficky}}
+{{In a Nutshell}}
 
 {{Designérský tip}}
 
@@ -31,4 +31,4 @@ append: {{Email footer}}}
 
 {{Events}}
 
-{{Aniversary}}
+{{Anniversary}}

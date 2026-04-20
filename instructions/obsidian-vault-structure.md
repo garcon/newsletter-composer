@@ -15,8 +15,9 @@ The `00 Inbox` folder contains source material for newsletter sections. Its subf
 
 - Files and folders may also be stored directly in `00 Inbox`, not only in its listed subfolders. These can include newsletter assets such as meme images, email headers, footers, and other supporting material.
 - If the agent does not know how to use a file stored directly in `00 Inbox`, it should ask the human editor about the appropriate use.
-- `01 Telegraph` - source material for `RSoW/Telegraficky` and `BBtn/Telegraph`.
-- `02 Designer's tip` - source material for `RSoW/Designérský tip` and `BBtn/Designer's tip`.
+- The canonical section mapping is maintained in `instructions/section-map.md`.
+- `01 In a Nutshell` - source material for `RSoW/In a Nutshell` and `BBtn/In a Nutshell`.
+- `02 Designer’s Tip` - source material for `RSoW/Designérský tip` and `BBtn/Designer’s Tip`.
 - `03 Opinion` - source material for essays inserted into `RSoW/Opinion` and `BBtn/Opinion`.
 - `04 Linkodrome` - source material for `RSoW/Linkodrom` and `BBtn/Linkodrome`.
 - `05 Articles` - overview of published articles for `RSoW/Vyšlo na ŘSoW` and `BBtn/Published on BBtn`.

@@ -19,16 +19,16 @@ append: {{Email footer}}}
 
 > {{standfirst}}
 
-{{Telegraficky}}
+{{In a Nutshell}}
 
-{{Designérský tip}}
+{{Designer’s Tip}}
 
 {{Opinion}}
 
-{{Linkodrom}}
+{{Linkodrome}}
 
-{{Vyšlo na ŘSoW}}
+{{Published on BBtn}}
 
 {{Events}}
 
-{{Aniversary}}
+{{Anniversary}}

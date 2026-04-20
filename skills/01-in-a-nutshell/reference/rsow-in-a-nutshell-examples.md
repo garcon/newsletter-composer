@@ -1,11 +1,11 @@
-# RSoW Telegraficky Examples
+# RSoW In a Nutshell Examples
 
-These examples were extracted from `resources/examples/rsow/` to keep the `01-telegraph` skill self-contained. The canonical source remains `resources/examples/`.
+These examples were extracted from `resources/examples/rsow/` to keep the `01-in-a-nutshell` skill self-contained. The canonical source remains `resources/examples/`.
 
 ## RSoW 100
 
 ```markdown
-## Telegraficky
+## In a Nutshell
 
 📺 Lukačovič chce zaměstnat lidi z veřejnoprávních médií, [nebo](https://www.mediaguru.cz/clanky/2025/12/lukacovic-seznam-je-pripraven-zasahnout-v-pripade-ohrozeni-ct-a-cro/)?\
 🔌 [Cloudflare už zase mělo výpadek.](https://www.theregister.com/2025/12/05/cloudflare_outage_again/)\
@@ -17,7 +17,7 @@ These examples were extracted from `resources/examples/rsow/` to keep the `01-te
 ## RSoW 111
 
 ```markdown
-## Telegraficky
+## In a Nutshell
 
 🏗️ [Vláda odsunula digitalizaci stavebního zákona](https://www.lupa.cz/aktuality/digitalizace-stavebniho-rizeni-se-posouva-do-let-2030-az-2031-potvrzuje-vladni-plan/) na roky 2030 až 2031.\
 👋 Skončil zmocněnec pro digitalizaci [Králíček](https://www.lupa.cz/aktuality/robert-kralicek-po-dvou-mesicich-konci-jako-vladni-zmocnenec-pro-digitalizaci/), v DIA [Kuchař](https://www.lupa.cz/aktuality/petr-kuchar-skoncil-v-cele-digitalni-a-informacni-agentury-odvolala-ho-vlada/), v NAKITu [Ďoubal](https://www.lupa.cz/aktuality/ve-statnim-it-padla-dalsi-hlava-konci-reditel-statniho-podniku-nakit/).\

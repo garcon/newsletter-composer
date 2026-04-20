@@ -9,5 +9,8 @@ Maintain these files as the plugin's working memory. When the user clarifies the
 - [Primary Use](instructions/primary-use.md) - explains the plugin's intended use with GitHub Copilot CLI, Obsidian notes, and the target audience.
 - [Newsletters](instructions/newsletters.md) - records the identities, abbreviations, URLs, languages, contexts, and audience assumptions for RSoW and BBtn.
 - [Obsidian Vault Structure](instructions/obsidian-vault-structure.md) - describes the expected vault folders, inbox structure, issue folders, templates, structure handling, and Obsidian plugin requirements.
+- [Section Map](instructions/section-map.md) - maps newsletter section folders, headings, template placeholders, and skills.
+- [Approval Workflow](instructions/approval-workflow.md) - defines shared front matter approval rules for section outputs that require editor approval.
+- [Publication Date](instructions/publication-date.md) - defines shared issue publication-date inference and date-range rules.
 - [Plugin Resources](instructions/plugin-resources.md) - describes shared plugin resources, especially canonical example newsletter locations.
 - [Ongoing Rules](instructions/ongoing-rules.md) - collects durable maintenance rules for keeping instructions concise and preserving newsletter context boundaries.

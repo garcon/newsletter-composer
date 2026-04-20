@@ -1,19 +1,21 @@
 ---
-name: newsletter-telegraph
-description: Compose the RSoW Telegraficky or BBtn Telegraph section from Obsidian inbox notes, verify linked sources, prepare an editorial checklist, and later convert accepted items into the final newsletter format.
+name: newsletter-in-a-nutshell
+description: Compose the RSoW or BBtn In a Nutshell section from Obsidian inbox notes, verify linked sources, prepare an editorial checklist, and later convert accepted items into the final newsletter format.
 ---
 
-# Newsletter Telegraph
+# Newsletter In a Nutshell
 
-Use this skill when the user wants to compose, update, or finalize the `Telegraficky` section for RSoW or the `Telegraph` section for BBtn.
+Use this skill when the user wants to compose, update, or finalize the `In a Nutshell` section for RSoW or BBtn.
+
+Use `instructions/section-map.md` for canonical placeholders and folder names.
 
 ## Inputs
 
-- RSoW source notes are in `00 Inbox/01 Telegraph`.
-- BBtn source notes are in `00 Inbox/01 Telegraph`.
+- RSoW source notes are in `00 Inbox/01 In a Nutshell`.
+- BBtn source notes are in `00 Inbox/01 In a Nutshell`.
 - The target issue folder is either `02 RSoW/rsow-###/` or `01 BBtn/bbtn-###/`.
-- The target section folder is `01 Telegraph` inside the issue folder.
-- The target section folder note is `_01 Telegraph.md`.
+- The target section folder is `01 In a Nutshell` inside the issue folder.
+- The target section folder note is `_01 In a Nutshell.md`.
 - The issue folder note is `_rsow-###.md` or `_bbtn-###.md`.
 
 When the issue number or newsletter is ambiguous, infer it from the existing vault structure when safe. Ask the human editor only when the target issue cannot be identified.
@@ -22,7 +24,7 @@ When the issue number or newsletter is ambiguous, infer it from the existing vau
 
 Before writing output:
 
-1. Read every file in `00 Inbox/01 Telegraph`, including Markdown notes and non-Markdown asset notes when possible.
+1. Read every file in `00 Inbox/01 In a Nutshell`, including Markdown notes and non-Markdown asset notes when possible.
 2. Extract every URL from every source file.
 3. Open every extracted URL using an available browsing tool, MCP server, or local computer tool.
 4. Use the linked source as the primary factual basis for the summary.
@@ -35,7 +37,7 @@ If a URL cannot be opened, still process the note if it contains enough context,
 - Work independently as much as practical.
 - Do not ask the human editor to read links or summarize source material.
 - Ask the human editor only when a source file cannot be interpreted, when link access fails and the note has insufficient context, or when a file in the inbox has no clear relation to the section.
-- After creating or updating the working output, move the source files that were used from `00 Inbox/01 Telegraph` into the issue folder's `01 Telegraph` subfolder.
+- After creating or updating the working output, move the source files that were used from `00 Inbox/01 In a Nutshell` into the issue folder's `01 In a Nutshell` subfolder.
 - Leave unused source files in their original location.
 - Never archive source files from this workflow.
 
@@ -74,8 +76,8 @@ Order the list by editorial importance:
 
 The first output is for human editorial processing. Write it to the section folder note:
 
-- RSoW example: `02 RSoW/rsow-112/01 Telegraph/_01 Telegraph.md`
-- BBtn example: `01 BBtn/bbtn-112/01 Telegraph/_01 Telegraph.md`
+- RSoW example: `02 RSoW/rsow-112/01 In a Nutshell/_01 In a Nutshell.md`
+- BBtn example: `01 BBtn/bbtn-112/01 In a Nutshell/_01 In a Nutshell.md`
 
 Create the issue section folder and folder note if missing. This is a non-destructive structure completion.
 
@@ -84,7 +86,7 @@ Use a checked Markdown task list. Items are checked by default. The human editor
 ### RSoW Working Output
 
 ```markdown
-## Telegraficky
+## In a Nutshell
 
 - [x] {{shrnutí s odkazy}}
 - [x] {{shrnutí s odkazy}}
@@ -96,7 +98,7 @@ Sledujte nás také přes [RSS feed](https://www.reknisioweb.cz/feed?sectionId=1
 ### BBtn Working Output
 
 ```markdown
-## Telegraph
+## In a Nutshell
 
 - [x] {{summary with links}}
 - [x] {{summary with links}}
@@ -136,4 +138,4 @@ Final item example:
 
 ## Style Reference
 
-Use `reference/rsow-telegraficky-examples.md` for compact examples extracted from `resources/examples/rsow/`. Treat `resources/examples/` as the canonical source if more examples are needed.
+Use `reference/rsow-in-a-nutshell-examples.md` for compact examples extracted from `resources/examples/rsow/`. Treat `resources/examples/` as the canonical source if more examples are needed.
