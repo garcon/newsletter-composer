@@ -1,15 +1,43 @@
 {
   "name": "newsletter/composer",
-  "description": "Composer plugin for creating and managing newsletters.",
+  "description": "Compose and manage the RSoW and Better Button newsletters from Obsidian notes.",
   "version": "0.0.1",
   "author": {
     "name": "Martin Kopta",
-    "email": "martin.kopta@garcon.cz"
+    "email": "martin.kopta+newsletter-composer@garcon.cz"
   },
   "license": "public domain",
-  "keywords": ["newsletter", "curation", "email", "writing"],
+  "keywords": [
+    "newsletter",
+    "obsidian",
+    "curation",
+    "email",
+    "writing",
+    "rsow",
+    "better-button",
+    "telegraph"
+  ],
+  "instructions": "INSTRUCTIONS.md",
+  "instructionFiles": "instructions/",
   "agents": "agents/",
   "skills": "skills/",
+  "resources": "resources/",
   "hooks": "hooks.json",
-  "mcpServers": ".mcp.json"
+  "mcpServers": ".mcp.json",
+  "interface": {
+    "displayName": "Newsletter Composer",
+    "shortDescription": "Compose RSoW and Better Button newsletters from Obsidian notes",
+    "longDescription": "Prepare, organize, and compose newsletter issues for Rekni si o web and Better Button using source notes, templates, and issue folders in an Obsidian vault.",
+    "developerName": "Martin Kopta",
+    "category": "Writing",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://www.reknisioweb.cz/",
+    "defaultPrompt": [
+      "Help compose a newsletter issue from the Obsidian vault structure",
+      "Prepare the Telegraficky or Telegraph section from inbox source notes"
+    ]
+  }
 }

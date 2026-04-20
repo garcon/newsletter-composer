@@ -1,0 +1,4 @@
+interface:
+  display_name: "Telegraph Composer"
+  short_description: "Prepare RSoW Telegraficky and BBtn Telegraph sections"
+  default_prompt: "Use the newsletter-telegraph skill to read all Telegraph inbox notes, verify linked sources, draft checked editorial summaries, and update the target issue section folder note."
