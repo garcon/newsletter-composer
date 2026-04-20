@@ -22,3 +22,4 @@ Maintain this directory as development documentation for the plugin itself. Runt
 - Put shared runtime rules used by multiple skills in `skills/_shared/reference/`.
 - Put examples that a skill actively uses in that skill's `reference/` folder.
 - Keep `instructions/` focused on plugin development, maintenance, and source-of-truth pointers.
+- Keep `newsletter-vault-structure` in `skills/99-vault-structure/` aligned with shared vault rules whenever vault structure expectations change.

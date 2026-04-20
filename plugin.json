@@ -15,6 +15,7 @@
     "writing",
     "rsow",
     "better-button",
+    "vault-structure",
     "in-a-nutshell",
     "design-tip",
     "opinion",
@@ -26,6 +27,7 @@
   ],
   "agents": "agents/",
   "skills": [
+    "skills/99-vault-structure/",
     "skills/01-in-a-nutshell/",
     "skills/02-design-tip/",
     "skills/03-opinion/",

@@ -10,3 +10,4 @@
 - After changing Claude Code command aliases or metadata, check whether `.claude-plugin/plugin.json`, `commands/`, and `hooks/hooks.json` are still current.
 - If a skill or agent needs an MCP server, keep `.mcp.json` current.
 - If a runtime rule is useful to more than one skill, prefer a shared reference over copying it into each skill.
+- Use the `99-` prefix for service workflow skills that support the vault or plugin operation rather than a newsletter section.

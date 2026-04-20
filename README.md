@@ -1,8 +1,8 @@
 # Newsletter Composer
 
-Newsletter Composer je plugin pro GitHub Copilot CLI, který pomáhá připravovat zpravodaje Řekni si o web a Better Button z podkladů uložených v Obsidian vaultu.
+Newsletter Composer je plugin pro přípravu zpravodajů Řekni si o web a Better Button z podkladů uložených v Obsidian vaultu. Funguje v GitHub Copilot CLI i v Claude Code.
 
-Plugin slouží lidskému editorovi: vezme podklady z `00 Inbox`, připraví pracovní výstupy v podsložkách aktuálního vydání, přesune použité zdroje a nakonec vloží schválené sekce do výsledné šablony vydání.
+Plugin slouží lidskému editorovi: vezme podklady z `00 Inbox`, připraví pracovní výstupy v podsložkách aktuálního vydání, přesune použité zdroje a nakonec vloží schválené sekce do výsledné šablony vydání. Sdílené skilly a agenti tvoří společné jádro; platformní soubory zpřístupňují stejné workflow v Copilot CLI i Claude Code.
 
 ## Co Plugin Umí
 
@@ -10,6 +10,7 @@ Plugin obsahuje agenty a skilly pro tyto části zpravodajů:
 
 | Agent | Skill | Sekce |
 | --- | --- | --- |
+| `vault-structure` | `newsletter-vault-structure` | kontrola a vytvoření struktury Obsidian vaultu |
 | `in-a-nutshell` | `newsletter-in-a-nutshell` | RSoW/BBtn `In a Nutshell` |
 | `design-tip` | `newsletter-design-tip` | RSoW `Designérský tip`, BBtn `Designer’s Tip` |
 | `opinion` | `newsletter-opinion` | RSoW/BBtn `Opinion` |
@@ -21,7 +22,7 @@ Plugin obsahuje agenty a skilly pro tyto části zpravodajů:
 
 ## Požadavky
 
-- Nainstalovaný a přihlášený GitHub Copilot CLI.
+- Nainstalovaný a přihlášený GitHub Copilot CLI, Claude Code, nebo obojí.
 - Přístup ke Git repozitáři s tímto pluginem.
 - Node.js a `npx`, protože plugin používá Playwright MCP.
 - Obsidian vault se strukturou popsanou níže, případně prázdný vault, který může Copilot připravit.
@@ -31,6 +32,7 @@ Rychlá kontrola:
 ```shell
 copilot version
 copilot login
+claude --version
 node --version
 npx --version
 ```
@@ -114,6 +116,7 @@ Claude Code používá namespacované příkazy podle názvu pluginu. Editor mů
 
 ```text
 /newsletter-composer:prepare-in-a-nutshell
+/newsletter-composer:check-vault-structure
 /newsletter-composer:prepare-design-tip
 /newsletter-composer:prepare-opinion
 /newsletter-composer:prepare-linkodrome
@@ -160,6 +163,8 @@ Vault má mít tyto hlavní složky:
 99 Service
 ```
 
+Servisní workflow, která neodpovídají konkrétní newsletterové sekci, používají také prefix `99-`. Skill pro kontrolu struktury vaultu je proto uložený jako `skills/99-vault-structure/`.
+
 Podklady patří do sekčních složek v `00 Inbox`:
 
 ```text
@@ -185,12 +190,13 @@ Každé vydání má vlastní složku, složkovou poznámku a odpovídající po
 ## Základní Postup
 
 1. Vložte podklady pro sekci do odpovídající podsložky v `00 Inbox`.
-2. Otevřete terminál v kořeni Obsidian vaultu a spusťte `copilot`.
-3. Spusťte odpovídajícího agenta přes `/agent`, nebo Copilotu napište, který skill má použít.
-4. Agent připraví pracovní výstup v podsložce aktuálního vydání.
-5. Zkontrolujte a upravte pracovní výstup v Obsidianu.
-6. Až je sekce připravená, změňte `approved: waiting` na `approved: approved` nebo `approved: true`.
-7. Spusťte agenta `finalize-issue`, který vloží schválené sekce do šablony vydání.
+2. Pokud vault zakládáte nebo si nejste jistí strukturou, spusťte agenta `vault-structure`.
+3. Otevřete terminál v kořeni Obsidian vaultu a spusťte `copilot`.
+4. Spusťte odpovídajícího agenta přes `/agent`, nebo Copilotu napište, který skill má použít.
+5. Agent připraví pracovní výstup v podsložce aktuálního vydání.
+6. Zkontrolujte a upravte pracovní výstup v Obsidianu.
+7. Až je sekce připravená, změňte `approved: waiting` na `approved: approved` nebo `approved: true`.
+8. Spusťte agenta `finalize-issue`, který vloží schválené sekce do šablony vydání.
 
 ## Spouštění Agentů
 
@@ -201,6 +207,10 @@ V interaktivním Copilot CLI použijte:
 ```
 
 Vyberte newsletterového agenta a popište úkol. Příklady:
+
+```text
+Check the Obsidian vault structure and create missing non-destructive folders.
+```
 
 ```text
 Prepare the In a Nutshell section for the current BBtn issue.
@@ -229,6 +239,10 @@ Use the newsletter-finalize-issue skill to assemble the BBtn issue.
 ```
 
 ## Poznámky K Jednotlivým Sekcím
+
+### Struktura Vaultu
+
+Agent `vault-structure` zkontroluje očekávané složky Obsidian vaultu, vytvoří chybějící nedestruktivní strukturu, doplní servisní šablony a může připravit strukturu konkrétního vydání. Nikdy nemaže, nearchivuje ani nepřepisuje existující soubory bez výslovného zadání.
 
 ### In a Nutshell
 
@@ -301,6 +315,7 @@ Claude Code:
 /reload-plugins
 /help
 /agents
+/newsletter-composer:check-vault-structure
 /newsletter-composer:prepare-opinion
 /newsletter-composer:finalize-issue
 ```

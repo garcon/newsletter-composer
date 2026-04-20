@@ -11,6 +11,8 @@ This repository supports multiple assistant plugin surfaces from the same core s
 
 Keep workflow behavior in the shared core whenever possible. Adapter files should point to the shared core instead of duplicating workflow rules.
 
+Use the `99-` prefix for service workflows that support the newsletter vault rather than a newsletter section. The vault structure skill therefore lives in `skills/99-vault-structure/`.
+
 ## GitHub Copilot CLI Adapter
 
 - Manifest: `plugin.json`.
@@ -39,3 +41,5 @@ When adding a new section workflow:
 - Add a Claude command alias in `commands/` when the workflow should be manually invokable.
 - Update `.claude-plugin/plugin.json` only when plugin metadata changes.
 - Update `README.md` for editor-facing usage changes.
+
+The `newsletter-vault-structure` skill is a workflow prerequisite rather than a newsletter section. Keep it available through both the Copilot agent `vault-structure` and the Claude command `/newsletter-composer:check-vault-structure`.
