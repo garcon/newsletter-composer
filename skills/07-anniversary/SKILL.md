@@ -7,7 +7,7 @@ description: Compose the RSoW or BBtn Anniversary closing paragraph by deriving 
 
 Use this skill when the user wants to compose, update, or finalize the closing anniversary paragraph for RSoW or BBtn.
 
-Use `instructions/publication-date.md` for publication-date inference, `instructions/approval-workflow.md` for approval semantics, and `instructions/section-map.md` for canonical placeholders and folder names.
+Use `../_shared/reference/vault-structure.md`, `../_shared/reference/newsletter-context.md`, `../_shared/reference/section-map.md`, `../_shared/reference/publication-date.md`, and `../_shared/reference/approval-workflow.md` for shared vault, language, placeholder, publication-date, and approval rules.
 
 ## Inputs
 
@@ -21,7 +21,7 @@ When the issue number or newsletter is ambiguous, infer it from the existing vau
 
 ## Publication Date
 
-- Infer the publication date using `instructions/publication-date.md`.
+- Infer the publication date using `../_shared/reference/publication-date.md`.
 
 ## Required Reading
 

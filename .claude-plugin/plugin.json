@@ -1,0 +1,20 @@
+{
+  "name": "newsletter-composer",
+  "description": "Compose and manage the RSoW and Better Button newsletters from Obsidian notes.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Martin Kopta",
+    "email": "martin.kopta+newsletter-composer@garcon.cz"
+  },
+  "homepage": "https://github.com/garcon/newsletter-composer",
+  "repository": "https://github.com/garcon/newsletter-composer",
+  "license": "CC0-1.0",
+  "keywords": [
+    "newsletter",
+    "obsidian",
+    "curation",
+    "writing",
+    "rsow",
+    "better-button"
+  ]
+}

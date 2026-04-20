@@ -7,7 +7,7 @@ description: Compose the RSoW Vyšlo na ŘSoW or BBtn Published on BBtn section 
 
 Use this skill when the user wants to compose, update, or finalize the `Vyšlo na ŘSoW` section for RSoW or the `Published on BBtn` section for BBtn.
 
-Use `instructions/publication-date.md` for the previous/current issue date interval and `instructions/section-map.md` for canonical placeholders and folder names.
+Use `../_shared/reference/vault-structure.md`, `../_shared/reference/newsletter-context.md`, `../_shared/reference/section-map.md`, and `../_shared/reference/publication-date.md` for shared vault, language, placeholder, and publication-date rules.
 
 ## Inputs
 

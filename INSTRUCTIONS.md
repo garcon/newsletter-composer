@@ -1,16 +1,24 @@
-# Newsletter Composer - working instructions
+# Newsletter Composer - Development Instructions
 
 This repository contains a GitHub Copilot plugin for composing and managing newsletters from notes prepared in an Obsidian vault.
 
-Maintain these files as the plugin's working memory. When the user clarifies the assignment, decisions, naming, workflows, newsletter formats, or reusable rules, update the relevant file in `instructions/` and keep this index current.
+Maintain this directory as development documentation for the plugin itself. Runtime workflow rules that an agent needs while composing newsletters should live in the relevant skill, or in shared skill references under `skills/_shared/reference/`.
 
 ## Instruction Files
 
-- [Primary Use](instructions/primary-use.md) - explains the plugin's intended use with GitHub Copilot CLI, Obsidian notes, and the target audience.
-- [Newsletters](instructions/newsletters.md) - records the identities, abbreviations, URLs, languages, contexts, and audience assumptions for RSoW and BBtn.
-- [Obsidian Vault Structure](instructions/obsidian-vault-structure.md) - describes the expected vault folders, inbox structure, issue folders, templates, structure handling, and Obsidian plugin requirements.
-- [Section Map](instructions/section-map.md) - maps newsletter section folders, headings, template placeholders, and skills.
-- [Approval Workflow](instructions/approval-workflow.md) - defines shared front matter approval rules for section outputs that require editor approval.
-- [Publication Date](instructions/publication-date.md) - defines shared issue publication-date inference and date-range rules.
-- [Plugin Resources](instructions/plugin-resources.md) - describes shared plugin resources, especially canonical example newsletter locations.
-- [Ongoing Rules](instructions/ongoing-rules.md) - collects durable maintenance rules for keeping instructions concise and preserving newsletter context boundaries.
+- [Primary Use](instructions/primary-use.md) - development-level product purpose and supported environment.
+- [Newsletters](instructions/newsletters.md) - maintenance note for newsletter identities; runtime facts live in `skills/_shared/reference/newsletter-context.md`.
+- [Obsidian Vault Structure](instructions/obsidian-vault-structure.md) - maintenance note for vault assumptions; runtime structure lives in `skills/_shared/reference/vault-structure.md`.
+- [Section Map](instructions/section-map.md) - maintenance note for section mapping; runtime map lives in `skills/_shared/reference/section-map.md`.
+- [Approval Workflow](instructions/approval-workflow.md) - maintenance note for approval behavior; runtime approval rules live in `skills/_shared/reference/approval-workflow.md`.
+- [Publication Date](instructions/publication-date.md) - maintenance note for date inference; runtime date rules live in `skills/_shared/reference/publication-date.md`.
+- [Platform Adapters](instructions/platform-adapters.md) - documents the GitHub Copilot CLI and Claude Code compatibility layers.
+- [Plugin Resources](instructions/plugin-resources.md) - development note for shared examples and reference material.
+- [Ongoing Rules](instructions/ongoing-rules.md) - durable maintenance rules for evolving the plugin.
+
+## Runtime Rule Placement
+
+- Put section-specific workflow rules in that section's `SKILL.md`.
+- Put shared runtime rules used by multiple skills in `skills/_shared/reference/`.
+- Put examples that a skill actively uses in that skill's `reference/` folder.
+- Keep `instructions/` focused on plugin development, maintenance, and source-of-truth pointers.

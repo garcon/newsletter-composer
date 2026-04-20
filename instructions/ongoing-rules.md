@@ -1,12 +1,12 @@
 # Ongoing Rules
 
-- Keep instructions concise, reusable, and easy to scan.
-- Prefer adding durable decisions and repeated workflow rules here rather than one-off task details.
+- Keep development instructions concise, reusable, and easy to scan.
+- Put runtime workflow rules in `SKILL.md` files or `skills/_shared/reference/`.
+- Put only plugin-development documentation in `instructions/`.
 - Preserve the distinction between the Czech RSoW context and the English/global-European BBtn context.
-- Use `instructions/section-map.md` as the canonical mapping for section folder names, headings, placeholders, and skills.
-- Use `instructions/approval-workflow.md` for any section output that requires explicit editor approval before insertion.
-- Use `instructions/publication-date.md` whenever a workflow needs an expected issue publication date or a date range between issues.
 - For checklist-based working outputs, preserve human edits and checked states; final issue assembly uses only checked items.
 - Never archive or delete source notes unless the user explicitly asks for archiving. Moving used source notes into an issue section folder is not archiving.
 - After making changes, always check whether `plugin.json` is still current and update it if needed.
+- After changing Claude Code command aliases or metadata, check whether `.claude-plugin/plugin.json`, `commands/`, and `hooks/hooks.json` are still current.
 - If a skill or agent needs an MCP server, keep `.mcp.json` current.
+- If a runtime rule is useful to more than one skill, prefer a shared reference over copying it into each skill.

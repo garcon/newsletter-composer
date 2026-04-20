@@ -7,7 +7,7 @@ description: Compose the RSoW Linkodrom or BBtn Linkodrome section from Obsidian
 
 Use this skill when the user wants to compose, update, or finalize the `Linkodrom` section for RSoW or the `Linkodrome` section for BBtn.
 
-Use `instructions/section-map.md` for canonical placeholders and folder names.
+Use `../_shared/reference/vault-structure.md`, `../_shared/reference/newsletter-context.md`, and `../_shared/reference/section-map.md` for shared vault, language, placeholder, and folder rules.
 
 ## Inputs
 

@@ -11,11 +11,12 @@ Use this skill when the user wants to assemble, finalize, or check a complete RS
 
 Before editing the issue folder note:
 
-1. Read `instructions/section-map.md`.
-2. Read `instructions/approval-workflow.md`.
-3. Read the issue folder note, such as `_rsow-###.md` or `_bbtn-###.md`.
-4. Read each section folder note that corresponds to a placeholder still present in the issue folder note.
-5. Preserve human edits in both the issue folder note and section folder notes.
+1. Read `../_shared/reference/vault-structure.md`.
+2. Read `../_shared/reference/section-map.md`.
+3. Read `../_shared/reference/approval-workflow.md`.
+4. Read the issue folder note, such as `_rsow-###.md` or `_bbtn-###.md`.
+5. Read each section folder note that corresponds to a placeholder still present in the issue folder note.
+6. Preserve human edits in both the issue folder note and section folder notes.
 
 ## Inputs
 
@@ -50,11 +51,11 @@ For approved front-matter sections:
 - `06 Events`
 - `07 Anniversary`
 
-Use `instructions/approval-workflow.md`. Insert only approved outputs. Remove YAML front matter before insertion.
+Use `../_shared/reference/approval-workflow.md`. Insert only approved outputs. Remove YAML front matter before insertion.
 
 ## Placeholder Handling
 
-- Replace only known placeholders from `instructions/section-map.md`.
+- Replace only known placeholders from `../_shared/reference/section-map.md`.
 - Leave unknown placeholders unchanged and report them.
 - Leave unapproved approved-gated section placeholders unchanged and report them.
 - After insertion, check whether any `{{...}}` placeholders remain in the issue folder note.
@@ -76,4 +77,3 @@ After finalizing:
 - Report which approved-gated sections were approved or waiting.
 - Report any missing section folder notes.
 - Report any remaining `{{...}}` placeholders.
-

@@ -7,7 +7,7 @@ description: Compose the RSoW Designérský tip or BBtn Designer’s Tip section
 
 Use this skill when the user wants to compose, update, or finalize the `Designérský tip` section for RSoW or the `Designer’s Tip` section for BBtn.
 
-The canonical folder, heading, and placeholder mapping is in `instructions/section-map.md`.
+Use `../_shared/reference/vault-structure.md`, `../_shared/reference/newsletter-context.md`, and `../_shared/reference/section-map.md` for shared vault, language, placeholder, and folder rules.
 
 ## Inputs
 

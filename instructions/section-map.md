@@ -1,16 +1,11 @@
 # Section Map
 
-This table records the durable mapping between inbox folders, issue section folders, headings, template placeholders, and skills.
+This is a development note. Runtime section mapping lives in `skills/_shared/reference/section-map.md`.
 
-| Order | Inbox and issue folder | RSoW heading | BBtn heading | RSoW placeholder | BBtn placeholder | Skill |
-| --- | --- | --- | --- | --- | --- | --- |
-| 01 | `01 In a Nutshell` | `In a Nutshell` | `In a Nutshell` | `{{In a Nutshell}}` | `{{In a Nutshell}}` | `newsletter-in-a-nutshell` |
-| 02 | `02 Designer’s Tip` | `Designérský tip` | `Designer’s Tip` | `{{Designérský tip}}` | `{{Designer’s Tip}}` | `newsletter-design-tip` |
-| 03 | `03 Opinion` | `Opinion` | `Opinion` | `{{Opinion}}` | `{{Opinion}}` | `newsletter-opinion` |
-| 04 | `04 Linkodrome` | `Linkodrom` | `Linkodrome` | `{{Linkodrom}}` | `{{Linkodrome}}` | `newsletter-linkodrome` |
-| 05 | `05 Articles` | `Vyšlo na ŘSoW` | `Published on BBtn` | `{{Vyšlo na ŘSoW}}` | `{{Published on BBtn}}` | `newsletter-articles` |
-| 06 | `06 Events` | none, paragraph only | none, paragraph only | `{{Events}}` | `{{Events}}` | `newsletter-events` |
-| 07 | `07 Anniversary` | none, paragraph only | none, paragraph only | `{{Anniversary}}` | `{{Anniversary}}` | `newsletter-anniversary` |
+When changing a section folder, heading, placeholder, or skill name:
 
-Folder notes use the folder name with a leading underscore, for example `_04 Linkodrome.md`.
-
+- Update `skills/_shared/reference/section-map.md`.
+- Update affected `SKILL.md` files and examples.
+- Update `skills/00-basic-structure/*-template.md` if placeholders change.
+- Update `plugin.json` keywords when public section names change.
+- Update `README.md` if editor-facing names change.

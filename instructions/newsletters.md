@@ -1,19 +1,10 @@
 # Newsletters
 
-## Rekni si o web
+This is a development note. Runtime newsletter facts live in `skills/_shared/reference/newsletter-context.md`.
 
-- Full name: "Řekni si o web"
-- Common abbreviations: "ŘSoW" and "RSoW" without Czech diacritics; the user may also write "RSOW".
-- URL: https://www.reknisioweb.cz/
-- Language: Czech.
-- Context: Czech audience and Czech context, especially for events, examples, news, and references.
-- Audience: clients of web designers.
+When changing names, URLs, language assumptions, or audience assumptions:
 
-## Better Button
-
-- Full name: "Better Button"
-- Common abbreviation: "BBtn".
-- URL: https://www.better-button.com/
-- Language: English.
-- Context: global audience with a primary European context, especially for events, examples, news, and references.
-- Audience: clients of web designers.
+- Update `skills/_shared/reference/newsletter-context.md`.
+- Check every section skill for embedded wording that may also need to change.
+- Update `README.md` if the editor-facing terminology changes.
+- Keep RSoW Czech-context behavior distinct from BBtn English/global-European behavior.

@@ -25,7 +25,16 @@
     "finalize-issue"
   ],
   "agents": "agents/",
-  "skills": "skills/",
+  "skills": [
+    "skills/01-in-a-nutshell/",
+    "skills/02-design-tip/",
+    "skills/03-opinion/",
+    "skills/04-linkodrome/",
+    "skills/05-articles/",
+    "skills/06-events/",
+    "skills/07-anniversary/",
+    "skills/08-finalize-issue/"
+  ],
   "hooks": "hooks.json",
   "mcpServers": ".mcp.json"
 }

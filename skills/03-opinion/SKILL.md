@@ -7,7 +7,7 @@ description: Turn an Opinion inbox topic into researched notes, a BBtn English e
 
 Use this skill when the user wants to compose, update, or finalize the `Opinion` essay section for RSoW or BBtn.
 
-Use `instructions/approval-workflow.md` for approval semantics and `instructions/section-map.md` for canonical placeholders and folder names.
+Use `../_shared/reference/vault-structure.md`, `../_shared/reference/newsletter-context.md`, `../_shared/reference/section-map.md`, and `../_shared/reference/approval-workflow.md` for shared vault, language, placeholder, and approval rules.
 
 ## Inputs
 

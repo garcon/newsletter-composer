@@ -7,7 +7,7 @@ description: Compose the RSoW or BBtn In a Nutshell section from Obsidian inbox 
 
 Use this skill when the user wants to compose, update, or finalize the `In a Nutshell` section for RSoW or BBtn.
 
-Use `instructions/section-map.md` for canonical placeholders and folder names.
+Use `../_shared/reference/vault-structure.md`, `../_shared/reference/newsletter-context.md`, and `../_shared/reference/section-map.md` for shared vault, language, placeholder, and folder rules.
 
 ## Inputs
 
