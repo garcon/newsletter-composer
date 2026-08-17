@@ -1,7 +1,7 @@
 ---
 title: {{Název vydání}} BBtn#{{Číslo vydání}}
 standfirst: {{Perex}}
-lede: {{Perex s emoji}}
+lede: {{Mikro-intro}}
 summary: {{Shrnutí vydání}}
 description: {{Popis vydání}}
 authors: {{Autoři}}
@@ -12,23 +12,25 @@ slug: {{Slug}}
 link: {{Odkaz na vydání}}
 shortlink: {{Zkrácený odkaz na vydání}}
 prepend: {{Email header}}
-append: {{Email footer}}}
+append: {{Email footer}}
 ---
 
 # {{title}}
 
 > {{standfirst}}
 
-{{In a Nutshell}}
-
-{{Designer’s Tip}}
+{{lede}}
 
 {{Opinion}}
 
+{{Signals and noise}}
+
 {{Linkodrome}}
 
-{{Published on BBtn}}
+{{Where we'll meet}}
 
-{{Events}}
+{{What we do / What you do}}
 
-{{Anniversary}}
+## Service
+
+Follow us also via [RSS feed](https://www.better-button.com/feed), [Bluesky](https://bsky.app/profile/better-buton.com), or [LinkedIn](https://www.linkedin.com/company/better-button/). If you are ever in Prague, stop by for the best beer in the world.

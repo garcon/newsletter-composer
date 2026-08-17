@@ -1,7 +1,7 @@
 ---
 title: {{Název vydání}} ŘSoW#{{Číslo vydání}}
 standfirst: {{Perex}}
-lede: {{Perex s emoji}}
+lede: {{Mikro-intro}}
 summary: {{Shrnutí vydání}}
 description: {{Popis vydání}}
 authors: {{Autoři}}
@@ -12,23 +12,25 @@ slug: {{Slug}}
 link: {{Odkaz na vydání}}
 shortlink: {{Zkrácený odkaz na vydání}}
 prepend: {{Email header}}
-append: {{Email footer}}}
+append: {{Email footer}}
 ---
 
 # {{title}}
 
 > {{standfirst}}
 
-{{In a Nutshell}}
-
-{{Designérský tip}}
+{{lede}}
 
 {{Opinion}}
 
+{{Signály a šumy}}
+
 {{Linkodrom}}
 
-{{Vyšlo na ŘSoW}}
+{{Kde se potkáme}}
 
-{{Events}}
+{{Co děláme my / Co děláte vy}}
 
-{{Anniversary}}
+## Servis
+
+Sledujte nás také přes [RSS feed](https://www.reknisioweb.cz/feed?sectionId=130962), [Bluesky](https://bsky.app/profile/www.reknisioweb.cz) nebo [Linkedin](https://www.linkedin.com/company/reknisioweb/). Když se vám to líbí, pošlete to dál. Odhlásit se můžete tady.

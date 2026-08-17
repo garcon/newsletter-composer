@@ -1,11 +1,11 @@
 ---
 name: newsletter-in-a-nutshell
-description: Compose the RSoW or BBtn In a Nutshell section from Obsidian inbox notes, verify linked sources, prepare an editorial checklist, and later convert accepted items into the final newsletter format.
+description: Compose the RSoW Signály a šumy or BBtn Signals and noise section from Obsidian inbox notes, verify linked sources, prepare an editorial checklist, and later convert accepted items into the final newsletter format.
 ---
 
-# Newsletter In a Nutshell
+# Newsletter Signály a šumy
 
-Use this skill when the user wants to compose, update, or finalize the `In a Nutshell` section for RSoW or BBtn.
+Use this skill when the user wants to compose, update, or finalize the `Signály a šumy` section for RSoW or the `Signals and noise` section for BBtn.
 
 Use `../_shared/reference/vault-structure.md`, `../_shared/reference/newsletter-context.md`, and `../_shared/reference/section-map.md` for shared vault, language, placeholder, and folder rules.
 
@@ -86,25 +86,21 @@ Use a checked Markdown task list. Items are checked by default. The human editor
 ### RSoW Working Output
 
 ```markdown
-## In a Nutshell
+## Signály a šumy
 
 - [x] {{shrnutí s odkazy}}
 - [x] {{shrnutí s odkazy}}
 - [x] {{shrnutí s odkazy}}
-
-Sledujte nás také přes [RSS feed](https://www.reknisioweb.cz/feed?sectionId=130962), [Bluesky](https://bsky.app/profile/www.reknisioweb.cz) nebo [Linkedin](https://www.linkedin.com/company/reknisioweb/).
 ```
 
 ### BBtn Working Output
 
 ```markdown
-## In a Nutshell
+## Signals and noise
 
 - [x] {{summary with links}}
 - [x] {{summary with links}}
 - [x] {{summary with links}}
-
-Follow us also via [RSS feed](https://www.better-button.com/feed), [Bluesky](https://bsky.app/profile/better-buton.com), or [LinkedIn](https://www.linkedin.com/company/better-button/).
 ```
 
 ## Updating Existing Working Output

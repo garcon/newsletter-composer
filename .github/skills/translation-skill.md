@@ -21,6 +21,8 @@ Localisation rules
 - Use British English spelling (organisation, recognise, behaviour, colour, travelled, etc.).
 - Format dates in long-form UK style (e.g., "1 February 2026").
 - Use decimal point "." and thousands separator "," (e.g., 1,234.56).
+- When the Czech source refers to a local example that would feel too narrow in BBtn, widen it to a European or Central European framing instead of keeping it Czech-specific.
+- Preserve the heart-of-Europe / Prague signature voice when the source contains a closing note or identity line.
 
 Global substitutions (apply across all files)
 - "ŘSoW" → "BBtn"

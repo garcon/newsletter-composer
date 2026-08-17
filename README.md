@@ -2,7 +2,7 @@
 
 Newsletter Composer je plugin pro přípravu zpravodajů Řekni si o web a Better Button z podkladů uložených v Obsidian vaultu. Funguje v GitHub Copilot CLI i v Claude Code.
 
-Plugin slouží lidskému editorovi: vezme podklady z `00 Inbox`, připraví pracovní výstupy v podsložkách aktuálního vydání, přesune použité zdroje a nakonec vloží schválené sekce do výsledné šablony vydání. Sdílené skilly a agenti tvoří společné jádro; platformní soubory zpřístupňují stejné workflow v Copilot CLI i Claude Code.
+Plugin slouží lidskému editorovi: vezme podklady z `00 Inbox`, připraví pracovní výstupy v podsložkách aktuálního vydání, přesune použité zdroje a nakonec vloží schválené sekce do výsledné šablony vydání. Sdílené skilly a agenti tvoří společné jádro; platformní soubory zpřístupňují stejné workflow v Copilot CLI i Claude Code. Výchozí newsletterová kostra teď pracuje s perexem, mikro-intrem, hlavním editorialem, Signály a šumy, Linkodromem, Kde se potkáme, závěrečným podpisem a servisním footerem.
 
 ## Co Plugin Umí
 
@@ -11,14 +11,16 @@ Plugin obsahuje agenty a skilly pro tyto části zpravodajů:
 | Agent | Skill | Sekce |
 | --- | --- | --- |
 | `vault-structure` | `newsletter-vault-structure` | kontrola a vytvoření struktury Obsidian vaultu |
-| `in-a-nutshell` | `newsletter-in-a-nutshell` | RSoW/BBtn `In a Nutshell` |
-| `design-tip` | `newsletter-design-tip` | RSoW `Designérský tip`, BBtn `Designer’s Tip` |
-| `opinion` | `newsletter-opinion` | RSoW/BBtn `Opinion` |
+| `in-a-nutshell` | `newsletter-in-a-nutshell` | RSoW `Signály a šumy`, BBtn `Signals and noise` |
+| `opinion` | `newsletter-opinion` | RSoW/BBtn hlavní editorial `Opinion` |
 | `linkodrome` | `newsletter-linkodrome` | RSoW `Linkodrom`, BBtn `Linkodrome` |
-| `articles` | `newsletter-articles` | RSoW `Vyšlo na ŘSoW`, BBtn `Published on BBtn` |
-| `events` | `newsletter-events` | RSoW/BBtn odstavec s akcemi |
-| `anniversary` | `newsletter-anniversary` | RSoW/BBtn závěrečný odstavec s výročím |
+| `events` | `newsletter-events` | RSoW `Kde se potkáme`, BBtn `Where we'll meet` |
+| `anniversary` | `newsletter-anniversary` | RSoW `Co děláme my / Co děláte vy`, BBtn `What we do / What you do` |
+| `design-tip` | `newsletter-design-tip` | volitelný / legacy blok `Designérský tip`, `Designer’s Tip` |
+| `articles` | `newsletter-articles` | volitelný / legacy blok `Vyšlo na ŘSoW`, `Published on BBtn` |
 | `finalize-issue` | `newsletter-finalize-issue` | sestavení výsledného vydání |
+
+`Perex`, `Mikro-intro` a `Servis` jsou template-level bloky, ne inboxové sekce. `Designérský tip` a `Articles` zůstávají k dispozici pro speciální nebo starší varianty vydání.
 
 ## Požadavky
 
@@ -213,7 +215,7 @@ Check the Obsidian vault structure and create missing non-destructive folders.
 ```
 
 ```text
-Prepare the In a Nutshell section for the current BBtn issue.
+Prepare the Signály a šumy section for the current BBtn issue.
 ```
 
 ```text
@@ -244,7 +246,7 @@ Use the newsletter-finalize-issue skill to assemble the BBtn issue.
 
 Agent `vault-structure` zkontroluje očekávané složky Obsidian vaultu, vytvoří chybějící nedestruktivní strukturu, doplní servisní šablony a může připravit strukturu konkrétního vydání. Nikdy nemaže, nearchivuje ani nepřepisuje existující soubory bez výslovného zadání.
 
-### In a Nutshell
+### Signály a šumy
 
 Podklady s odkazy vložte do `00 Inbox/01 In a Nutshell`. Agent ověří zdroje a připraví stručná editoriální shrnutí.
 
@@ -266,11 +268,11 @@ Agent `articles` vypíše články vydané na odpovídajícím webu od poslední
 
 ### Events
 
-Agent `events` připraví jeden odstavec s akcemi pro sedm dní od očekávaného data vydání zpravodaje.
+Agent `events` připraví odstavec `Kde se potkáme` s akcemi pro sedm dní od očekávaného data vydání zpravodaje.
 
-### Anniversary
+### Closing Note
 
-Agent `anniversary` připraví závěrečný odstavec s výročím. Pokud nejsou podklady v Inboxu, použije události z odpovídající stránky Wikipedie a vybírá přednostně pozitivní kulatá výročí.
+Agent `anniversary` připraví závěrečný odstavec `Co děláme my / Co děláte vy`. Pro BBtn do něj přirozeně zapracuje pražský a evropský framing včetně závěrečného pozvání na pivo.
 
 ## Schvalování Výstupů
 

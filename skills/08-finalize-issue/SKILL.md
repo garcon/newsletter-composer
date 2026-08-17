@@ -1,6 +1,6 @@
 ---
 name: newsletter-finalize-issue
-description: Assemble a RSoW or BBtn issue by replacing template placeholders with prepared section outputs, using only approved front-matter sections and checked checklist items.
+description: Assemble a RSoW or BBtn issue by replacing template placeholders with prepared section outputs, using only approved front-matter sections, checked checklist items, and the new template-level intro and service blocks.
 ---
 
 # Newsletter Finalize Issue
@@ -39,12 +39,6 @@ For checklist sections:
 
 Use only checked `- [x]` items. Remove task list markers before insertion. Preserve links, emphasis, images, paragraphs, and editor wording. Do not insert unchecked items.
 
-For direct working-output sections:
-
-- `02 Designer’s Tip`
-
-Insert the edited section folder note body as-is, unless the skill-specific instructions say otherwise.
-
 For approved front-matter sections:
 
 - `03 Opinion`
@@ -52,6 +46,20 @@ For approved front-matter sections:
 - `07 Anniversary`
 
 Use `../_shared/reference/approval-workflow.md`. Insert only approved outputs. Remove YAML front matter before insertion.
+
+For template-level blocks:
+
+- `Perex`
+- `Mikro-intro`
+- `Servis`
+
+Leave these blocks to the issue template or human editing. Do not replace them unless the issue template explicitly stores them as placeholders.
+
+For legacy optional blocks:
+
+- `02 Designer’s Tip`
+
+Insert the edited section folder note body as-is, unless the skill-specific instructions say otherwise.
 
 ## Placeholder Handling
 
@@ -64,9 +72,9 @@ Use `../_shared/reference/approval-workflow.md`. Insert only approved outputs. R
 ## Output Shape
 
 - Keep section headings that are part of section outputs.
-- Do not add headings for Events or Anniversary unless the section folder note already contains one.
-- Keep checklist-derived Linkodrome and Articles items as paragraphs without bullets.
-- Keep In a Nutshell final items on separate lines with Markdown line breaks as defined by its skill.
+- Keep checklist-derived Signály a šumy and Linkodrome items as paragraphs or line-based bullets as defined by their skills.
+- Keep Kde se potkáme and What we do / What you do as their own section blocks.
+- Keep the service footer intact.
 
 ## Verification
 

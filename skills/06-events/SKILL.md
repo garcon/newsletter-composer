@@ -1,11 +1,11 @@
 ---
 name: newsletter-events
-description: Compose the RSoW or BBtn Events paragraph by selecting relevant events from the site event overview for the seven days starting on the newsletter publication date, then insert it only after editor approval.
+description: Compose the RSoW Kde se potkáme or BBtn Where we'll meet paragraph by selecting relevant events from the site event overview for the seven days starting on the newsletter publication date, then insert it only after editor approval.
 ---
 
 # Newsletter Events
 
-Use this skill when the user wants to compose, update, or finalize the `Events` paragraph for RSoW or BBtn.
+Use this skill when the user wants to compose, update, or finalize the `Kde se potkáme` paragraph for RSoW or the `Where we'll meet` paragraph for BBtn.
 
 Use `../_shared/reference/vault-structure.md`, `../_shared/reference/newsletter-context.md`, `../_shared/reference/section-map.md`, `../_shared/reference/publication-date.md`, and `../_shared/reference/approval-workflow.md` for shared vault, language, placeholder, publication-date, and approval rules.
 
@@ -78,6 +78,8 @@ approved: waiting
 approved: waiting
 ---
 
+## Kde se potkáme
+
 {{jeden odstavec s vybranými akcemi v češtině}}
 ```
 
@@ -88,10 +90,12 @@ approved: waiting
 approved: waiting
 ---
 
+## Where we'll meet
+
 {{one paragraph with selected events in English}}
 ```
 
-Do not add a section heading unless the existing issue format explicitly uses one. The `{{Events}}` placeholder represents the paragraph itself.
+The `{{Kde se potkáme}}` or `{{Where we'll meet}}` placeholder represents the paragraph itself.
 
 ## Paragraph Style
 
@@ -123,7 +127,7 @@ When converting the working output into the final issue newsletter:
 - Read the target section folder note.
 - Use the paragraph only when front matter contains `approved: approved`, `approved: true`, or `approved: "true"`.
 - If `approved` is missing, `waiting`, `false`, or any other value, do not insert the paragraph into the final issue.
-- Replace `{{Events}}` in the issue folder note with the approved paragraph.
+- Replace `{{Kde se potkáme}}` or `{{Where we'll meet}}` in the issue folder note with the approved paragraph.
 - Remove YAML front matter before inserting the paragraph.
 - Preserve links, emphasis, and editor wording.
 

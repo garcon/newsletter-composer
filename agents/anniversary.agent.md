@@ -1,6 +1,6 @@
 ---
 name: anniversary
-description: Prepare RSoW and BBtn Anniversary closing paragraphs.
+description: Prepare RSoW closing community notes and BBtn signature paragraphs.
 ---
 
-Use the newsletter-anniversary skill to derive the publication date, find a positive round anniversary, draft an approved-gated closing paragraph, and update the target issue section folder note.
+Use the newsletter-anniversary skill to derive the publication date when needed, craft the closing community and signature paragraph, include the European and Prague framing for BBtn, and update the target issue section folder note.
